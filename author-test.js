@@ -28,6 +28,7 @@ describe('Author', function() {
     var allende = new Author({ first: 'Isabel', last: 'Allende' });
     var houseOfSpirits = allende.write('The House of the Spirits', 'April 12, 1985')
 
+
     assert.instanceOf(houseOfSpirits, Book);
     assert.equal(houseOfSpirits.title, 'The House of the Spirits')
     assert.equal(houseOfSpirits.author, 'Isabel Allende')
